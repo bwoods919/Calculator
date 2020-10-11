@@ -36,7 +36,7 @@
             this.btn6 = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnEquals = new System.Windows.Forms.Button();
@@ -136,16 +136,16 @@
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
-            // button9
+            // btn3
             // 
-            this.button9.Location = new System.Drawing.Point(130, 84);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(56, 19);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "3";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btn3.Location = new System.Drawing.Point(130, 84);
+            this.btn3.Margin = new System.Windows.Forms.Padding(2);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(56, 19);
+            this.btn3.TabIndex = 8;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.button9_Click);
             // 
             // btnDecimal
             // 
@@ -257,7 +257,7 @@
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btnDecimal);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn6);
@@ -284,7 +284,7 @@
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnEquals;

@@ -9,6 +9,7 @@ namespace Calculator
     public partial class Form1 : Form
     {
         string input = string.Empty;
+        string txtBoxText = string.Empty;
         string opt1 = string.Empty;
         string opt2 = string.Empty;
 
@@ -25,105 +26,128 @@ namespace Calculator
         {
             this.txtBox.Text = "";
             input += "0";
-            this.txtBox.Text += input;
+            txtBoxText += "0";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += "1";
-            this.txtBox.Text += input;
+            txtBoxText += "1";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += "2";
-            this.txtBox.Text += input;
+            txtBoxText += "2";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += "3";
-            this.txtBox.Text += input;
+            txtBoxText += "3";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += "4";
-            this.txtBox.Text += input;
+            txtBoxText += "4";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += "5";
-            this.txtBox.Text += input;
+            txtBoxText += "5";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += "6";
-            this.txtBox.Text += input;
+            txtBoxText += "6";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += "7";
-            this.txtBox.Text += input;
+            txtBoxText += "7";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += "8";
-            this.txtBox.Text += input;
+            txtBoxText += "8";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += "9";
-            this.txtBox.Text += input;
+            txtBoxText += "9";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btnDecimal_Click(object sender, EventArgs e)
         {
             this.txtBox.Text = "";
             input += ".";
-            this.txtBox.Text += input;
+            txtBoxText += ".";
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
+            this.txtBox.Text = "";
             operatior = '/';
+            txtBoxText += "/";
             opt1 = input;
             input = string.Empty;
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
+            this.txtBox.Text = "";
             operatior = '*';
+            txtBoxText += "*";
             opt1 = input;
             input = string.Empty;
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btnSubtract_Click(object sender, EventArgs e)
         {
+            this.txtBox.Text = "";
             operatior = '-';
+            txtBoxText += "-";
             opt1 = input;
             input = string.Empty;
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            this.txtBox.Text = "";
             operatior = '+';
+            txtBoxText += "+";
             opt1 = input;
             input = string.Empty;
+            this.txtBox.Text += txtBoxText;
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
@@ -150,7 +174,7 @@ namespace Calculator
                 output = num1 * num2;
                 txtBox.Text = output.ToString();
             
-            } else if (opt1 == "/") {
+            } else if (operatior == '/') {
                 
                 if (num2 != 0)
                 {
@@ -171,6 +195,7 @@ namespace Calculator
             this.input = string.Empty;
             this.opt1 = string.Empty;
             this.opt2 = string.Empty;
+            this.txtBoxText = string.Empty;
         }
     }
 }
